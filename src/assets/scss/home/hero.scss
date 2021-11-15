@@ -1,0 +1,75 @@
+@import "../globals";
+@import "../mixins";
+
+.hero {
+    margin-top: 18vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: space-between;
+    color: hsl(0, 0%, 100%);
+    
+    
+    &__title {
+        flex-basis: 100%;
+
+        @include min768 {
+            flex-basis: 50%;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin: 1rem 0;
+        }
+        &-link {
+            display: inline-block;
+            color: #24e3bb;
+            font-size: 300;
+            margin-bottom: 25px;
+            a {
+                display: inline-block;
+                font-size: 2em;
+                color: #24e3bb;
+                margin-left: 10px;
+    
+            }
+        }
+
+    }
+
+    &__video-container {
+        flex-basis: 100%;
+
+        @include min768 {
+            flex-basis: 50%;
+        }
+    }
+
+    &__icons {
+        span {
+            display: inline-block;
+            margin: 0 3px;
+            width: 35px;
+            height: 35px;
+            font-size: 1.1em;
+            line-height: 35px;
+            text-align: center;
+            border: 1px solid white;
+            border-radius: 50%;
+
+            &:hover {
+                transform: translateY(-1px);
+            }
+        }
+        span:nth-child(1){
+            margin-left: 0;
+        }
+    }
+    
+}
