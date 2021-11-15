@@ -1,0 +1,40 @@
+@import "../mixins";
+@import "../globals";
+
+.about {
+    color: hsl(0, 0%, 100%);
+
+    &__title {
+       text-align: center;
+       font-weight: 400;
+    }
+    &__body {
+
+        @include min768 {
+            padding: 0 12rem;
+        }
+        
+        @include min992 {
+            padding: 8rem;
+        }
+        @include min1200 {
+            padding: 0 12rem;
+        }
+
+        summary, h4 {
+            color: #24e3bb;
+        }
+        summary {
+            cursor: pointer
+        }
+
+        h4 {
+            
+            margin-top: 20px;
+            margin-bottom: 0;
+            font-weight: 400;
+            text-transform: uppercase; 
+   
+        }
+    }
+}
