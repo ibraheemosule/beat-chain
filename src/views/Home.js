@@ -1,6 +1,8 @@
+import "../assets/scss/home/home.scss"
 import Navbar from "../components/nav/Nav";
 import Hero from "../components/Home/Hero";
 import About from "../components/Home/About"
+import Footer from "../components/footer/Footer"
 
 const Home = () => {
   return (
@@ -8,6 +10,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <Footer/>
     </div>
   );
 };

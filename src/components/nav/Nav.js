@@ -20,7 +20,7 @@ const Navbar = () => {
             <span className="navbar-toggler-bar bar2"></span>
             <span className="navbar-toggler-bar bar3"></span>
           </button>
-          <a href="#pablo" className="navbar-brand">
+          <a href="#pablo" className="navbar-brand" translate="no">
             Beat Chain
           </a>
         </div>
@@ -29,7 +29,7 @@ const Navbar = () => {
             <div className="row">
               <div className="collapse-brand col-6">
                 <a href="#pablo">
-                  <span>beat chain</span>
+                  <span translate="no">beat chain</span>
                 </a>
               </div>
               <div className="collapse-close text-right">
