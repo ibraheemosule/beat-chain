@@ -1,6 +1,13 @@
 @import "../mixins";
 @import "../globals";
 
+// ont-size: 1rem;
+//     max-width: 100%;
+//     flex-basis: 75%;
+//     padding-top: 0.2
+// em
+// ;
+
 ul{
   margin: 0 auto 1rem;
 }
@@ -112,6 +119,7 @@ a {
   background-color: transparent;
   border: 0.0625rem solid transparent;
   border-radius: 0.25rem;
+  cursor: pointer;
   &:hover,
   &:focus {
     text-decoration: none;
@@ -119,14 +127,14 @@ a {
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: 799.98px) {
   .navbar-expand-lg > .container {
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-@include min768 {
+@include min800 {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -152,15 +160,15 @@ a {
 }
 
 .text-left {
-  text-align: left !important;
+  text-align: left;
 }
 
 .text-right {
-  text-align: right !important;
+  text-align: right;
 }
 
 .text-center {
-  text-align: center !important;
+  text-align: center;
 }
 
 
@@ -218,7 +226,7 @@ a {
   margin-left: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
  
   .navbar .navbar-collapse {
     animation: show_navbar_collapse 0.2s ease forwards;
@@ -320,7 +328,16 @@ a {
   }
 }
 
-@include min768 {
+@include max400{
+  .navbar .navbar-collapse .navbar-collapse-header .collapse-brand {
+    font-size: 1rem;
+    max-width: 100%;
+    flex-basis: 75%;
+    padding-top: 0.2em;
+  }
+}
+
+@include min800 {
   .navbar-collapse {
     background: none !important;
   }
@@ -368,7 +385,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
   .navbar .navbar-translate {
     width: 100%;
     position: relative;

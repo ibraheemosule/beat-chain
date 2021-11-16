@@ -13,6 +13,10 @@
         @include min768 {
             padding: 0 12rem;
         }
+
+        @include min820 {
+            padding: 0 5rem;
+        }
         
         @include min992 {
             padding: 8rem;
@@ -25,7 +29,11 @@
             color: #24e3bb;
         }
         summary {
-            cursor: pointer
+            cursor: pointer;
+
+            &:hover {
+                color: wheat;
+            }
         }
 
         h4 {
