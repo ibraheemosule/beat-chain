@@ -45,7 +45,7 @@ const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a href="#about" className="nav-link">
+              <a onClick={toggleFunction} href="#about" className="nav-link">
                 About
               </a>
             </li>
